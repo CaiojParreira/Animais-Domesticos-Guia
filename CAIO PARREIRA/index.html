@@ -6,6 +6,7 @@
     <title>RA 1224250</title>
 </head>
 <body>
+    <img src="./imagens/img_menu.jpg" alt="" width="1000">
     <h1>Guia de adoção para animais domésticos</h1>
     <form action="" method="GET">
         <H2>MENU</H2>
@@ -14,16 +15,17 @@
         </label>
         <br><br>
         <label for="senha">
-            Digite seu numero de telefone: <input type="password" name="senha" id="sn"></input>
+            Digite seu numero de telefone: <input type="text" name="telefone" id="sn"></input>
         </label>
         <br><br>
-        <input type="submit" value="Enviar"> <br> <br>
-
        VOCE TEM PREFERENCIA POR: <br><br>
 
-       GATO <input type="radio" name='cat' id="cat">
-       CACHORRO <input type="radio" name='dog' id="dog">
-    
+       GATO <input type="radio" name="pet" value="cat" id="cat">
+       <label for="cat"></label>
+       CACHORRO <input type="radio" name="pet" value="" id="dog">
+       <label for="dog"></label> <br><br>
+
+       <input type="submit" value="Enviar"> <br> <br>
     </form>
 </body>
 </html>
