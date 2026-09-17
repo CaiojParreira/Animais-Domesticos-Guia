@@ -8,28 +8,88 @@
 </head>
 <body>
     <menu>
-        <img src="./imagens/img_menu.jpg" width="800">
-        <hr width="800"> 
         <a href="imagens.html"><strong>FOTOS DOS ANIMAIS</strong></a> |
         <a href="faleconosco.html"><strong>FALE CONOSCO</strong></a> |
-        <a href="index.html">MENU</a>
-        <hr width="800">
+        <a href="index.html"><strong>MENU</strong></a>
     </menu>
+    <hr width="800">
+
     <h1>Fale Conosco</h1>
+    <table width="800" border="0" cellpadding="5">
+        <tr>
+            <td align="center">
+                <p>
+                    Preencha o formulário abaixo para entrar em contato conosco, tirar dúvidas ou manifestar seu interesse na adoção de um pet. Nossa equipe responderá o mais breve possível!
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
     <form action="" method="GET">
-        <label for="nome">
-            Digite seu nome: <input type="text" name="nome" id="nome"></input>
-        </label>
-        <br><br>
-        <label for="email">
-            Digite seu email: <input type="text" name="email" id="email"></input>
-        </label>
-        <br><br>
-        <label for="mensagem">
-            Digite sua mensagem: <textarea name="mensagem" id="mensagem"></textarea>
-        </label>
-        <br><br>
-        <input type="submit" value="Enviar"> <br> <br>
+        <table border="1" width="800" cellpadding="10" cellspacing="0">
+            <tr>
+                <th colspan="2" align="center">Formulário de Contato e Interesse em Adoção</th>
+            </tr>
+            <tr>
+                <td width="30%" align="right">
+                    <label for="nome"><strong>Nome completo:</strong></label>
+                </td>
+                <td width="70%">
+                    <input type="text" name="nome" id="nome" size="45" required placeholder="Digite seu nome">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <label for="telefone"><strong>Telefone / WhatsApp:</strong></label>
+                </td>
+                <td>
+                    <input type="text" name="telefone" id="telefone" size="45" placeholder="(XX) XXXXX-XXXX">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <strong>Preferência de animal:</strong>
+                </td>
+                <td>
+                    <input type="radio" name="pet" id="cat" value="gato">
+                    <label for="cat">Gato</label> 
+                    <input type="radio" name="pet" id="dog" value="cachorro">
+                    <label for="dog">Cachorro</label>
+                    <input type="radio" name="pet" id="ambos" value="ambos" checked>
+                    <label for="ambos">Ambos</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <label for="tipo"><strong>Preferência de tipo:</strong></label>
+                </td>
+                <td>
+                    <select name="tipo" id="tipo" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="opc1">Mais brincalhão</option>
+                        <option value="opc2">Mais quieto</option>
+                        <option value="opc3">Equilibrado</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right" valign="top">
+                    <label for="mensagem"><strong>Mensagem:</strong></label>
+                </td>
+                <td>
+                    <textarea name="mensagem" id="mensagem" rows="6" cols="45" required placeholder="Digite sua mensagem, dúvidas ou informações sobre o espaço para o pet..."></textarea>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input type="submit" value="Enviar Formulário">
+                    <input type="reset" value="Limpar Campos">
+                </td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
